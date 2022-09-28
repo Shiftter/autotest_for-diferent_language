@@ -2,8 +2,8 @@ import pytest
 from selenium import webdriver
 
 def pytest_addoption(parser):
-    parser.addoption('--language', action='store', default=None,
-                     help="Choose languages: ru or en")
+    parser.addoption('--language', action='store', default="ru",
+                     help="Choose languages: ru or any other")
 
 @pytest.fixture(scope="function")
 def browser(request):
