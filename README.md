@@ -1,1 +1,1 @@
-# autotest_for-diferent_language
+# autotest_for_diferent_language
