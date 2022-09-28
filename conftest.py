@@ -8,7 +8,6 @@ def pytest_addoption(parser):
 @pytest.fixture(scope="function")
 def browser(request):
     language = request.config.getoption("language")
-    browser = None
     print("\nstart browser for test..")
     options = webdriver.ChromeOptions()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
